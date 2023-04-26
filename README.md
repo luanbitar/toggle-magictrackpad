@@ -8,6 +8,8 @@ To do this I'll need:
 - Edit the `toggle-magictrackpad.sh` file and replace:
   - The MAC addresses with your devices
     - You can find the MAC address of your device by running `blueutil --paired`
+  - blueutil's path if you installed it in a different way
+    - you can find with `which blueutil`
 - Open Automator
   - Create a new Application Type document
   - Select "Run Shell Script" from the left panel

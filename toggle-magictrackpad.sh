@@ -1,11 +1,11 @@
-res=$(blueutil --is-connected 3c:a6:f6:ba:9d:ea)
+res=$(/opt/homebrew/bin/blueutil --is-connected 3c:a6:f6:ba:9d:ea)
 if [[ "$res" = '1' ]]
 then
-  blueutil --unpair 3c:a6:f6:ba:9d:ea
+  /opt/homebrew/bin/blueutil --unpair 3c:a6:f6:ba:9d:ea
 else
-  blueutil --unpair 3c:a6:f6:ba:9d:ea
+  /opt/homebrew/bin/blueutil --unpair 3c:a6:f6:ba:9d:ea
   sleep 1
-  blueutil --pair 3c:a6:f6:ba:9d:ea
-  sleep 1
-  blueutil --connect 3c:a6:f6:ba:9d:ea
+  /opt/homebrew/bin/blueutil --pair 3c:a6:f6:ba:9d:ea
+  sleep 10
+  /opt/homebrew/bin/blueutil --connect 3c:a6:f6:ba:9d:ea
 fi
