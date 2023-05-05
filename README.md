@@ -1,4 +1,4 @@
-Using a magic trackpad with multiple macos devices is everything a mess
+Using a magic trackpad with multiple macos devices is a mess
 This is why I created this little script to switch between devices simply executing an application
 
 To do this I'll need:
